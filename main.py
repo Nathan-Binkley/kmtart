@@ -11,7 +11,7 @@ URL_REGEX = r"""(?i)\b((?:https?:(?:/{1,3}|[a-z0-9%])|[a-z0-9.\-]+[.](?:com|net|
 
 def get_all_urls():
 	#PROXY = "127.0.0.1:8084" # IP:PORT or HOST:PORT
-	chrome_options = webdriver.ChromeOptions()
+	chrome_options = webdriver.ChromeOptions("C:\Program Files (x86)\chromedriver.exe")
 	#chrome_options.add_argument('--proxy-server=%s' % PROXY)
 	#chrome_options.add_argument("user-data-dir=selenium")
 	chrome_options.add_experimental_option("excludeSwitches",["ignore-certificate-errors"])
